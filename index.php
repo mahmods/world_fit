@@ -18,7 +18,7 @@
     <section class="blog-section-1">
         <div class="container-fluid">
             <div class="row justify-content-center">
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4 wow fadeInLeft">
                     <div class="block-1">
                         <div class="overlay2">
                             <h2>How To Lose Weight Through Fitness</h2>
@@ -36,7 +36,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4 wow fadeInRight">
                     <div class="block-3">
                         <div class="overlay2">
                             <h2>How To Build Your Muscles</h2>
@@ -50,7 +50,7 @@
     </section>
     <section class="blog-section-2 container-fluid">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 wow fadeInRight">
                 <div class="content">
                     <span>BLOG</span>
                     <h2>How to Achieve Results in Muscles Building</h2>
@@ -68,7 +68,7 @@
             </div>
         </div>
         <div class="row flex-row-reverse">
-            <div class="col-md-6">
+            <div class="col-md-6 wow fadeInLeft">
                 <div class="content">
                     <span>BLOG</span>
                     <h2>Workout Routine for Effective Weight Loss</h2>
@@ -84,7 +84,7 @@
             <div class="col-md-6 image-2"></div>
         </div>
     </section>
-    <section class="gallery-section">
+    <section class="gallery-section wow fadeInUp">
         <div class="container">
             <h3 class="text-uppercase">GALLERY</h3>
             <h1 class="text-uppercase">SEE OUR AWESOME IMAGES</h1>

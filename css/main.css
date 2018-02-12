@@ -20,9 +20,6 @@ body, html {
 
 .header-home { 
     height: 100%; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
 }
 
@@ -92,7 +89,7 @@ body, html {
     height: 100%; 
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
 }
 .slide-content {
     display: flex;
@@ -975,17 +972,14 @@ body, html {
     background-color: #161515;
 }
 
-.footer-bottom ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.footer-bottom nav {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
 }
 
-.footer-bottom li {
+.footer-bottom nav a {
     margin-bottom: 10px;
-}
-
-.footer-bottom li a {
     color: #838e87;
 }
 
@@ -997,4 +991,120 @@ body, html {
 
 .footer-bottom p {
     color: #838e87;
+}
+
+/*=== FADE IN LEFT ===*/
+@-webkit-keyframes fadeInLeft2 {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-15%, 0, 0);
+      transform: translate3d(-15%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  @keyframes fadeInLeft2 {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-15%, 0, 0);
+      transform: translate3d(-15%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  .fadeInLeft2 {
+    -webkit-animation-name: fadeInLeft2;
+    animation-name: fadeInLeft2;
+  }
+
+
+  .blog-section .post {
+      height: 600px;
+      border: 1px solid #ddd;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 40px;
+  }
+
+  .blog-section .post p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #838e87;
+}
+
+.blog-section .post p, .blog-section .post h2 {
+    padding: 0 20px;
+}
+
+.blog-section .post .button{
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.post-image {
+    position: relative;
+}
+
+.post-image:after {
+    content: '\e82a';
+    font-family: "icon_font";
+    font-size: 40px;
+    text-align: center;
+    padding-top: 80px;
+    color: #fff;
+    position: absolute;
+    width: 100%; height:100%;
+    top:0; left:0;
+    background: rgba(95,199,174,0.8);
+    opacity: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+
+.post-image:hover:after {
+    opacity: 1;
+}
+
+.post-section {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.post-section h3 {
+    font-size: 1.2em;
+    color: #a7e4c2;
+}
+
+.post-section h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.post-section .content {
+    text-align: left;
+    font-size: 1.4em;
+    line-height: 40px;
+    font-weight: 300;
+}
+
+.post-section .content h2 {
+    color: #5fc7ae;
+    margin-top: 40px;
+}
+
+.post-section .content img {
+    margin-bottom: 40px;
 }

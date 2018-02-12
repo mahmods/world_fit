@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <base href="http://localhost:8080/world_fit/blog">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -20,18 +21,10 @@
                 <i class="fightclub-icon-menu-1"></i>
             </a>
             <nav class="navigation collapse navbar-collapse ml-auto w-100 justify-content-end" id="navbarTogglerDemo02">
-                <a href="./">Home</a>
-                <a href="./about.php">About Us</a>
-                <a href="#">Blog</a>
-                <a href="#">Products</a>
-                <a href="#">Contact Us</a>
+                <?php include("navigation.php") ?>
             </nav>
             <nav id="mobile-nav" class="" style="display:none;">
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Blog</a>
-                <a href="#">Products</a>
-                <a href="#">Contact Us</a>
+                <?php include("navigation.php") ?>
             </nav>
         </div>
     </header>

@@ -23,22 +23,18 @@
                     </div>
                     <div class="col-12 col-md-4">
                         <h1>Sitemap</h1>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Products</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
+                        <nav>
+                            <?php include("navigation.php") ?>
+                        </nav>
                     </div>
                     <div class="col-12 col-md-4">
                         <h1>RECENT POSTS</h1>
-                        <ul>
-                            <li><a href="#">How To Lose Weight Through Fitness</a></li>
-                            <li><a href="#">Workout Routine for Effective Weight Loss</a></li>
-                            <li><a href="#">How To Build Your Muscles</a></li>
-                            <li><a href="#">How to Achieve Results in Muscles Building</a></li>
-                        </ul>
+                        <nav>
+                            <a href="#">How To Lose Weight Through Fitness</a>
+                            <a href="#">Workout Routine for Effective Weight Loss</a>
+                            <a href="#">How To Build Your Muscles</a>
+                            <a href="#">How to Achieve Results in Muscles Building</a>
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -46,6 +42,7 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/wow.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/lightbox.min.js"></script>
     <script src="./js/main.js"></script>
