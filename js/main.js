@@ -9,7 +9,11 @@ $(document).ready(function(){
         speed: 2000,
         autoplay: true,
         fade: true,
-        pauseOnHover: false
+        pauseOnHover: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        centerMode: true,
     });
     Slider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
         $(slick.$slides[nextSlide]).children().children().children().each(function (index) {
@@ -26,6 +30,6 @@ $(document).ready(function(){
         slideout.toggle();
     });
     $('#mobile-toggler').on('click', function() {
-        $('#mobile-nav').fadetoggle();
+        $('#mobile-nav').fadeToggle();
     });
   });
