@@ -1,0 +1,857 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:300,400,700,200');
+
+* {
+    font-family: 'Exo 2', sans-serif;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+.header { 
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.navbar,
+.header-slider {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.navbar {
+    z-index: 10;
+
+}
+
+#mobile-nav {
+    background-color: #161515;
+    width: 95%;
+    height: 450px;
+    position: absolute;
+    top: 15%;
+    left: 2.5%;
+    overflow: hidden;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#mobile-nav a {
+    padding: 20px 40px;
+    color: #fff;
+    border-top: 0.5px solid rgba(255,255,255,0.4);
+    transition: all 0.1s ease;
+}
+
+#mobile-nav a:hover {
+    background-color:#5fc7ae;
+    text-decoration: none;
+}
+
+.header-slider {
+    height: 100%;
+}
+
+.slick-list,
+.slick-track,
+.slick-slide {
+  height: 100%;
+}
+
+.slide1 { background-image: url("/img/382.jpg") }
+.slide2 { background-image: url("/img/OG29W80.jpg") }
+.slide1, .slide2 { 
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slide-content {
+    display: flex;
+    align-self: center;
+    margin-top: 200px;
+    color: #fff;
+    flex-direction: column;
+    align-content: flex-end;
+}
+
+.slide-content h1 {
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    line-height: 70px;
+    font-weight: 700;
+    font-size: 70px;
+}
+
+.slide-content h2 {
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    line-height: 51px;
+    font-weight: 300;
+    font-size: 51px;
+}
+
+.header-slider {
+  }
+
+.button {
+    margin-top: 40px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1em;
+    background-color: #5fc7ae;
+    border: 2px solid rgba(167,228,194,0);
+    padding: 14px 48px;
+    align-self: flex-start;
+    position: relative;
+    transition: all 0.15s linear;
+}
+
+.button:hover {
+    text-decoration: none;
+    color: #5fc7ae;
+    background-color: rgba(167,228,194,0);
+    border-color: #5fc7ae;
+}
+
+.button::before {
+    content: "";
+    width: 26px;
+    height: 6px;
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    background-color: #a7e4c2
+}
+
+.button:hover::before {
+    background-color: #5fc7ae
+}
+
+.overlay{
+    background: rgba(95,199,174,0.2);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+}
+
+.vignette {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+  }
+
+.brand {
+    color: #fff;
+    font-weight: 400;
+}
+
+.brand span {
+    font-weight: 200;
+}
+
+.navbar {
+    padding: 40px 40px;
+}
+
+.navigation a {
+    margin-left: 20px;
+    color: #a7e4c2;
+    font-size: 18px;
+    transition: all 0.5s;
+    font-weight: 400;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.navigation a::before {
+    content: "";
+    height: 0px;
+    left: 0px;
+    position: absolute;
+    top: 1px;
+    width: 0px;
+    border-top: 1px solid rgb(205, 146, 109);
+    transition: all 0.1s ease;
+}
+
+
+.navigation a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigation a:hover::before {
+    width: 100%;
+    border-top: 1px solid white;
+    transition: all 0.1s ease;
+}
+
+
+.navbar-toggler {
+    color: #fff!important;
+    border: 0;
+}
+
+#panel {
+    height: 100%;
+}
+
+  .menu {
+    position: absolute;
+    right: -70px;
+    top: -70px;
+    z-index: 100;
+    width: 200px;
+    height: 200px;
+    border-radius: 50% 50% 50% 50%;
+    transition: .5s ease-in-out;
+    box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+    cursor: pointer;
+  }
+
+  .hamburger {
+    position: absolute;
+    top: 135px;
+    left: 50px;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    display: block;
+    transform-origin: center;
+    transition: .5s ease-in-out;
+  }
+  .hamburger:after, .hamburger:before {
+    transition: .5s ease-in-out;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+  }
+  .hamburger:before {
+    top: -10px;
+  }
+  .hamburger:after {
+    bottom: -10px;
+  }
+
+  .about-section {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      margin-top: 100px;
+  }
+
+  .about-section h3 {
+      font-size: 1.2em;
+      color: #a7e4c2;
+  }
+
+  .about-section h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.gallery-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.gallery-section .images {
+    height: 256px;
+
+}
+
+.gallery-section h3 {
+    font-size: 1.2em;
+    color: #a7e4c2;
+}
+
+.gallery-section h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.gallery-section img {
+    object-fit: cover;
+    height: 256px;
+    width: 256px
+}
+
+.hover {
+    background-color: #5fc7ae;
+    opacity: 0;
+    transition: all .5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hover:hover {
+    opacity: 0.85;
+}
+
+.hover i {
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid #fff;
+    padding: 8px;
+
+}
+
+@font-face {
+    font-family: 'icon_font';
+    src: url('./fonts/icon_font/icon_font.eot');
+    src: url('./fonts/icon_font/icon_font.eot') format('embedded-opentype'),
+         url('./fonts/icon_font/icon_font.woff') format('woff'),
+         url('./fonts/icon_font/icon_font.ttf') format('truetype'),
+         url('./fonts/icon_font/icon_font.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+  /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+  /**/
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+      font-family: 'icon_font';
+      src: url('./fonts/icon_font/icon_font.svg?42608627#icon_font') format('svg');
+    }
+  }
+
+[class^="fightclub-icon-"]:before, [class*=" fightclub-icon-"]:before {
+    font-family: "icon_font";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+  
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+  
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+  
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+  
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+  
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+  
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  }
+  
+  .fightclub-icon-minus-in-circle:before { content: '\e800'; } /* 'î €' */
+  .fightclub-icon-plus-in-circle-1:before { content: '\e801'; } /* 'î ' */
+  .fightclub-icon-bug:before { content: '\e802'; } /* 'î ‚' */
+  .fightclub-icon-volume-up:before { content: '\e803'; } /* 'î ƒ' */
+  .fightclub-icon-arrow-down-long:before { content: '\e804'; } /* 'î „' */
+  .fightclub-icon-arrow-up-long:before { content: '\e805'; } /* 'î …' */
+  .fightclub-icon-arrow-combo:before { content: '\e806'; } /* 'î †' */
+  .fightclub-icon-star:before { content: '\e807'; } /* 'î ‡' */
+  .fightclub-icon-arrow-left-thin:before { content: '\e808'; } /* 'î ˆ' */
+  .fightclub-icon-arrow-right-thin:before { content: '\e809'; } /* 'î ‰' */
+  .fightclub-icon-arrow-left-bold:before { content: '\e80a'; } /* 'î Š' */
+  .fightclub-icon-arrow-right-bold:before { content: '\e80b'; } /* 'î ‹' */
+  .fightclub-icon-star-empty:before { content: '\e80c'; } /* 'î Œ' */
+  .fightclub-icon-link:before { content: '\e80d'; } /* 'î ' */
+  .fightclub-icon-comment-1:before { content: '\e80e'; } /* 'î Ž' */
+  .fightclub-icon-mustache:before { content: '\e80f'; } /* 'î ' */
+  .fightclub-icon-scissors-and-comb:before { content: '\e810'; } /* 'î ' */
+  .fightclub-icon-lightbulb:before { content: '\e811'; } /* 'î ‘' */
+  .fightclub-icon-down-dir:before { content: '\e812'; } /* 'î ’' */
+  .fightclub-icon-left-dir:before { content: '\e813'; } /* 'î “' */
+  .fightclub-icon-up-dir:before { content: '\e814'; } /* 'î ”' */
+  .fightclub-icon-circle:before { content: '\e815'; } /* 'î •' */
+  .fightclub-icon-arrow-down:before { content: '\e816'; } /* 'î –' */
+  .fightclub-icon-arrow-down-thing:before { content: '\e817'; } /* 'î —' */
+  .fightclub-icon-arrow-top-thing:before { content: '\e818'; } /* 'î ˜' */
+  .fightclub-icon-bag-cart:before { content: '\e819'; } /* 'î ™' */
+  .fightclub-icon-menu:before { content: '\e81a'; } /* 'î š' */
+  .fightclub-icon-arrow-left:before { content: '\e81b'; } /* 'î ›' */
+  .fightclub-icon-arrow-right:before { content: '\e81c'; } /* 'î œ' */
+  .fightclub-icon-arrow-up:before { content: '\e81d'; } /* 'î ' */
+  .fightclub-icon-clock-1:before { content: '\e81e'; } /* 'î ž' */
+  .fightclub-icon-social_youtube_square:before { content: '\e81f'; } /* 'î Ÿ' */
+  .fightclub-icon-scissors-1:before { content: '\e820'; } /* 'î  ' */
+  .fightclub-icon-restaurant-1:before { content: '\e821'; } /* 'î ¡' */
+  .fightclub-icon-hotel-food:before { content: '\e822'; } /* 'î ¢' */
+  .fightclub-icon-login-1:before { content: '\e823'; } /* 'î £' */
+  .fightclub-icon-logout-1:before { content: '\e824'; } /* 'î ¤' */
+  .fightclub-icon-quote:before { content: '\e825'; } /* 'î ¥' */
+  .fightclub-icon-dog:before { content: '\e826'; } /* 'î ¦' */
+  .fightclub-icon-social_delicious_square:before { content: '\e827'; } /* 'î §' */
+  .fightclub-icon-bookmark:before { content: '\e828'; } /* 'î ¨' */
+  .fightclub-icon-baby:before { content: '\e829'; } /* 'î ©' */
+  .fightclub-icon-search-2:before { content: '\e82a'; } /* 'î ª' */
+  .fightclub-icon-social_deviantart_square:before { content: '\e82b'; } /* 'î «' */
+  .fightclub-icon-flashlight:before { content: '\e82c'; } /* 'î ¬' */
+  .fightclub-icon-plus:before { content: '\e82d'; } /* 'î ­' */
+  .fightclub-icon-eye:before { content: '\e82e'; } /* 'î ®' */
+  .fightclub-icon-minus:before { content: '\e82f'; } /* 'î ¯' */
+  .fightclub-icon-cancel-squared:before { content: '\e830'; } /* 'î °' */
+  .fightclub-icon-eye-3:before { content: '\e831'; } /* 'î ±' */
+  .fightclub-icon-cancel-circled:before { content: '\e832'; } /* 'î ²' */
+  .fightclub-icon-lock-open:before { content: '\e833'; } /* 'î ³' */
+  .fightclub-icon-lock-2:before { content: '\e834'; } /* 'î ´' */
+  .fightclub-icon-tag-2:before { content: '\e835'; } /* 'î µ' */
+  .fightclub-icon-switch:before { content: '\e836'; } /* 'î ¶' */
+  .fightclub-icon-water:before { content: '\e837'; } /* 'î ·' */
+  .fightclub-icon-droplet:before { content: '\e838'; } /* 'î ¸' */
+  .fightclub-icon-graduation-cap-1:before { content: '\e839'; } /* 'î ¹' */
+  .fightclub-icon-user:before { content: '\e83a'; } /* 'î º' */
+  .fightclub-icon-download:before { content: '\e83b'; } /* 'î »' */
+  .fightclub-icon-upload:before { content: '\e83c'; } /* 'î ¼' */
+  .fightclub-icon-picture:before { content: '\e83d'; } /* 'î ½' */
+  .fightclub-icon-thumbs-up:before { content: '\e83e'; } /* 'î ¾' */
+  .fightclub-icon-thumbs-down:before { content: '\e83f'; } /* 'î ¿' */
+  .fightclub-icon-tag:before { content: '\e840'; } /* 'î¡€' */
+  .fightclub-icon-tags:before { content: '\e841'; } /* 'î¡' */
+  .fightclub-icon-upload-cloud:before { content: '\e842'; } /* 'î¡‚' */
+  .fightclub-icon-download-cloud:before { content: '\e843'; } /* 'î¡ƒ' */
+  .fightclub-icon-globe:before { content: '\e844'; } /* 'î¡„' */
+  .fightclub-icon-sun:before { content: '\e845'; } /* 'î¡…' */
+  .fightclub-icon-cloud:before { content: '\e846'; } /* 'î¡†' */
+  .fightclub-icon-flash:before { content: '\e847'; } /* 'î¡‡' */
+  .fightclub-icon-moon:before { content: '\e848'; } /* 'î¡ˆ' */
+  .fightclub-icon-umbrella:before { content: '\e849'; } /* 'î¡‰' */
+  .fightclub-icon-flight:before { content: '\e84a'; } /* 'î¡Š' */
+  .fightclub-icon-leaf:before { content: '\e84b'; } /* 'î¡‹' */
+  .fightclub-icon-award:before { content: '\e84c'; } /* 'î¡Œ' */
+  .fightclub-icon-cog:before { content: '\e84d'; } /* 'î¡' */
+  .fightclub-icon-paper-plane:before { content: '\e84e'; } /* 'î¡Ž' */
+  .fightclub-icon-right-dir:before { content: '\e84f'; } /* 'î¡' */
+  .fightclub-icon-leaf-1:before { content: '\e850'; } /* 'î¡' */
+  .fightclub-icon-lifebuoy:before { content: '\e851'; } /* 'î¡‘' */
+  .fightclub-icon-direction:before { content: '\e852'; } /* 'î¡’' */
+  .fightclub-icon-feather:before { content: '\e853'; } /* 'î¡“' */
+  .fightclub-icon-pencil:before { content: '\e854'; } /* 'î¡”' */
+  .fightclub-icon-keyboard:before { content: '\e855'; } /* 'î¡•' */
+  .fightclub-icon-print:before { content: '\e856'; } /* 'î¡–' */
+  .fightclub-icon-bell:before { content: '\e857'; } /* 'î¡—' */
+  .fightclub-icon-attention:before { content: '\e858'; } /* 'î¡˜' */
+  .fightclub-icon-alert:before { content: '\e859'; } /* 'î¡™' */
+  .fightclub-icon-tools:before { content: '\e85a'; } /* 'î¡š' */
+  .fightclub-icon-basket:before { content: '\e85b'; } /* 'î¡›' */
+  .fightclub-icon-coffee:before { content: '\e85c'; } /* 'î¡œ' */
+  .fightclub-icon-food:before { content: '\e85d'; } /* 'î¡' */
+  .fightclub-icon-briefcase:before { content: '\e85e'; } /* 'î¡ž' */
+  .fightclub-icon-suitcase:before { content: '\e85f'; } /* 'î¡Ÿ' */
+  .fightclub-icon-heart-empty:before { content: '\e860'; } /* 'î¡ ' */
+  .fightclub-icon-glass:before { content: '\e861'; } /* 'î¡¡' */
+  .fightclub-icon-music:before { content: '\e862'; } /* 'î¡¢' */
+  .fightclub-icon-video:before { content: '\e863'; } /* 'î¡£' */
+  .fightclub-icon-videocam:before { content: '\e864'; } /* 'î¡¤' */
+  .fightclub-icon-picture-1:before { content: '\e865'; } /* 'î¡¥' */
+  .fightclub-icon-camera:before { content: '\e866'; } /* 'î¡¦' */
+  .fightclub-icon-scissors:before { content: '\e867'; } /* 'î¡§' */
+  .fightclub-icon-fire:before { content: '\e868'; } /* 'î¡¨' */
+  .fightclub-icon-bookmarks:before { content: '\e869'; } /* 'î¡©' */
+  .fightclub-icon-angle-left:before { content: '\e86a'; } /* 'î¡ª' */
+  .fightclub-icon-angle-right:before { content: '\e86b'; } /* 'î¡«' */
+  .fightclub-icon-angle-up:before { content: '\e86c'; } /* 'î¡¬' */
+  .fightclub-icon-angle-down:before { content: '\e86d'; } /* 'î¡­' */
+  .fightclub-icon-down-dir-1:before { content: '\e86e'; } /* 'î¡®' */
+  .fightclub-icon-up-dir-1:before { content: '\e86f'; } /* 'î¡¯' */
+  .fightclub-icon-left-dir-1:before { content: '\e870'; } /* 'î¡°' */
+  .fightclub-icon-right-dir-1:before { content: '\e871'; } /* 'î¡±' */
+  .fightclub-icon-play:before { content: '\e872'; } /* 'î¡²' */
+  .fightclub-icon-stop:before { content: '\e873'; } /* 'î¡³' */
+  .fightclub-icon-pause:before { content: '\e874'; } /* 'î¡´' */
+  .fightclub-icon-cross:before { content: '\e875'; } /* 'î¡µ' */
+  .fightclub-icon-cancel:before { content: '\e876'; } /* 'î¡¶' */
+  .fightclub-icon-check-1:before { content: '\e877'; } /* 'î¡·' */
+  .fightclub-icon-alarm:before { content: '\e878'; } /* 'î¡¸' */
+  .fightclub-icon-coffee-1:before { content: '\e879'; } /* 'î¡¹' */
+  .fightclub-icon-camera-1:before { content: '\e87a'; } /* 'î¡º' */
+  .fightclub-icon-map-1:before { content: '\e87b'; } /* 'î¡»' */
+  .fightclub-icon-flaticon_4418:before { content: '\e87c'; } /* 'î¡¼' */
+  .fightclub-icon-user-club2:before { content: '\e87d'; } /* 'î¡½' */
+  .fightclub-icon-user-3:before { content: '\e87e'; } /* 'î¡¾' */
+  .fightclub-icon-friends:before { content: '\e87f'; } /* 'î¡¿' */
+  .fightclub-icon-search:before { content: '\e880'; } /* 'î¢€' */
+  .fightclub-icon-mail-alt:before { content: '\e881'; } /* 'î¢' */
+  .fightclub-icon-heart:before { content: '\e882'; } /* 'î¢‚' */
+  .fightclub-icon-star-2:before { content: '\e883'; } /* 'î¢ƒ' */
+  .fightclub-icon-star-empty-2:before { content: '\e884'; } /* 'î¢„' */
+  .fightclub-icon-user-1:before { content: '\e885'; } /* 'î¢…' */
+  .fightclub-icon-users:before { content: '\e886'; } /* 'î¢†' */
+  .fightclub-icon-th-large:before { content: '\e887'; } /* 'î¢‡' */
+  .fightclub-icon-th:before { content: '\e888'; } /* 'î¢ˆ' */
+  .fightclub-icon-th-list:before { content: '\e889'; } /* 'î¢‰' */
+  .fightclub-icon-ok:before { content: '\e88a'; } /* 'î¢Š' */
+  .fightclub-icon-ok-circled:before { content: '\e88b'; } /* 'î¢‹' */
+  .fightclub-icon-ok-circled2:before { content: '\e88c'; } /* 'î¢Œ' */
+  .fightclub-icon-plus-squared:before { content: '\e88d'; } /* 'î¢' */
+  .fightclub-icon-help:before { content: '\e88e'; } /* 'î¢Ž' */
+  .fightclub-icon-info:before { content: '\e88f'; } /* 'î¢' */
+  .fightclub-icon-link-ext:before { content: '\e890'; } /* 'î¢' */
+  .fightclub-icon-attach:before { content: '\e891'; } /* 'î¢‘' */
+  .fightclub-icon-lock:before { content: '\e892'; } /* 'î¢’' */
+  .fightclub-icon-pin:before { content: '\e893'; } /* 'î¢“' */
+  .fightclub-icon-eye-1:before { content: '\e894'; } /* 'î¢”' */
+  .fightclub-icon-bookmark-1:before { content: '\e895'; } /* 'î¢•' */
+  .fightclub-icon-flag:before { content: '\e896'; } /* 'î¢–' */
+  .fightclub-icon-quote-left:before { content: '\e897'; } /* 'î¢—' */
+  .fightclub-icon-code:before { content: '\e898'; } /* 'î¢˜' */
+  .fightclub-icon-edit:before { content: '\e899'; } /* 'î¢™' */
+  .fightclub-icon-location:before { content: '\e89a'; } /* 'î¢š' */
+  .fightclub-icon-login:before { content: '\e89b'; } /* 'î¢›' */
+  .fightclub-icon-menu-1:before { content: '\e89c'; } /* 'î¢œ' */
+  .fightclub-icon-resize-vertical:before { content: '\e89d'; } /* 'î¢' */
+  .fightclub-icon-move:before { content: '\e89e'; } /* 'î¢ž' */
+  .fightclub-icon-rocket:before { content: '\e89f'; } /* 'î¢Ÿ' */
+  .fightclub-icon-right:before { content: '\e8a0'; } /* 'î¢ ' */
+  .fightclub-icon-play-circled:before { content: '\e8a1'; } /* 'î¢¡' */
+  .fightclub-icon-font:before { content: '\e8a2'; } /* 'î¢¢' */
+  .fightclub-icon-text-height:before { content: '\e8a3'; } /* 'î¢£' */
+  .fightclub-icon-text-width:before { content: '\e8a4'; } /* 'î¢¤' */
+  .fightclub-icon-list:before { content: '\e8a5'; } /* 'î¢¥' */
+  .fightclub-icon-megaphone:before { content: '\e8a6'; } /* 'î¢¦' */
+  .fightclub-icon-list-bullet:before { content: '\e8a7'; } /* 'î¢§' */
+  .fightclub-icon-tasks:before { content: '\e8a8'; } /* 'î¢¨' */
+  .fightclub-icon-money:before { content: '\e8a9'; } /* 'î¢©' */
+  .fightclub-icon-volume-up-1:before { content: '\e8aa'; } /* 'î¢ª' */
+  .fightclub-icon-music-1:before { content: '\e8ab'; } /* 'î¢«' */
+  .fightclub-icon-search-1:before { content: '\e8ac'; } /* 'î¢¬' */
+  .fightclub-icon-mail:before { content: '\e8ad'; } /* 'î¢­' */
+  .fightclub-icon-heart-1:before { content: '\e8ae'; } /* 'î¢®' */
+  .fightclub-icon-star-3:before { content: '\e8af'; } /* 'î¢¯' */
+  .fightclub-icon-user-2:before { content: '\e8b0'; } /* 'î¢°' */
+  .fightclub-icon-videocam-1:before { content: '\e8b1'; } /* 'î¢±' */
+  .fightclub-icon-camera-2:before { content: '\e8b2'; } /* 'î¢²' */
+  .fightclub-icon-photo:before { content: '\e8b3'; } /* 'î¢³' */
+  .fightclub-icon-attach-1:before { content: '\e8b4'; } /* 'î¢´' */
+  .fightclub-icon-lock-1:before { content: '\e8b5'; } /* 'î¢µ' */
+  .fightclub-icon-eye-2:before { content: '\e8b6'; } /* 'î¢¶' */
+  .fightclub-icon-tag-1:before { content: '\e8b7'; } /* 'î¢·' */
+  .fightclub-icon-thumbs-up-1:before { content: '\e8b8'; } /* 'î¢¸' */
+  .fightclub-icon-pencil-1:before { content: '\e8b9'; } /* 'î¢¹' */
+  .fightclub-icon-phone-1:before { content: '\e8ba'; } /* 'î¢º' */
+  .fightclub-icon-comment:before { content: '\e8bb'; } /* 'î¢»' */
+  .fightclub-icon-location-2:before { content: '\e8bc'; } /* 'î¢¼' */
+  .fightclub-icon-check-empty:before { content: '\e8bd'; } /* 'î¢½' */
+  .fightclub-icon-check:before { content: '\e8be'; } /* 'î¢¾' */
+  .fightclub-icon-cup:before { content: '\e8bf'; } /* 'î¢¿' */
+  .fightclub-icon-trash:before { content: '\e8c0'; } /* 'î£€' */
+  .fightclub-icon-doc:before { content: '\e8c1'; } /* 'î£' */
+  .fightclub-icon-star-1:before { content: '\e8c2'; } /* 'î£‚' */
+  .fightclub-icon-note:before { content: '\e8c3'; } /* 'î£ƒ' */
+  .fightclub-icon-star-empty-1:before { content: '\e8c4'; } /* 'î£„' */
+  .fightclub-icon-cog-1:before { content: '\e8c5'; } /* 'î£…' */
+  .fightclub-icon-params:before { content: '\e8c6'; } /* 'î£†' */
+  .fightclub-icon-calendar:before { content: '\e8c7'; } /* 'î£‡' */
+  .fightclub-icon-sound:before { content: '\e8c8'; } /* 'î£ˆ' */
+  .fightclub-icon-clock:before { content: '\e8c9'; } /* 'î£‰' */
+  .fightclub-icon-lightbulb-1:before { content: '\e8ca'; } /* 'î£Š' */
+  .fightclub-icon-tv:before { content: '\e8cb'; } /* 'î£‹' */
+  .fightclub-icon-desktop:before { content: '\e8cc'; } /* 'î£Œ' */
+  .fightclub-icon-mobile:before { content: '\e8cd'; } /* 'î£' */
+  .fightclub-icon-cd:before { content: '\e8ce'; } /* 'î£Ž' */
+  .fightclub-icon-inbox:before { content: '\e8cf'; } /* 'î£' */
+  .fightclub-icon-globe-1:before { content: '\e8d0'; } /* 'î£' */
+  .fightclub-icon-cloud-1:before { content: '\e8d1'; } /* 'î£‘' */
+  .fightclub-icon-paper-plane-1:before { content: '\e8d2'; } /* 'î£’' */
+  .fightclub-icon-email:before { content: '\e8d3'; } /* 'î£“' */
+  .fightclub-icon-home:before { content: '\e8d4'; } /* 'î£”' */
+  .fightclub-icon-fire-1:before { content: '\e8d5'; } /* 'î£•' */
+  .fightclub-icon-graduation-cap:before { content: '\e8d6'; } /* 'î£–' */
+  .fightclub-icon-megaphone-1:before { content: '\e8d7'; } /* 'î£—' */
+  .fightclub-icon-database:before { content: '\e8d8'; } /* 'î£˜' */
+  .fightclub-icon-key:before { content: '\e8d9'; } /* 'î£™' */
+  .fightclub-icon-beaker:before { content: '\e8da'; } /* 'î£š' */
+  .fightclub-icon-truck:before { content: '\e8db'; } /* 'î£›' */
+  .fightclub-icon-credit-card:before { content: '\e8dc'; } /* 'î£œ' */
+  .fightclub-icon-money-1:before { content: '\e8dd'; } /* 'î£' */
+  .fightclub-icon-location-1:before { content: '\e8de'; } /* 'î£ž' */
+  .fightclub-icon-food-1:before { content: '\e8df'; } /* 'î£Ÿ' */
+  .fightclub-icon-shop:before { content: '\e8e0'; } /* 'î£ ' */
+  .fightclub-icon-diamond:before { content: '\e8e1'; } /* 'î£¡' */
+  .fightclub-icon-t-shirt:before { content: '\e8e2'; } /* 'î£¢' */
+  .fightclub-icon-wallet:before { content: '\e8e3'; } /* 'î££' */
+  .fightclub-icon-rocket-1:before { content: '\e8e4'; } /* 'î£¤' */
+  .fightclub-icon-money-2:before { content: '\e8e5'; } /* 'î£¥' */
+  .fightclub-icon-cog-alt:before { content: '\e8e6'; } /* 'î£¦' */
+  .fightclub-icon-wrench:before { content: '\e8e7'; } /* 'î£§' */
+  .fightclub-icon-sliders:before { content: '\e8e8'; } /* 'î£¨' */
+  .fightclub-icon-doc-1:before { content: '\e8e9'; } /* 'î£©' */
+  .fightclub-icon-attention-alt:before { content: '\e8ea'; } /* 'î£ª' */
+  .fightclub-icon-direction-1:before { content: '\e8eb'; } /* 'î£«' */
+  .fightclub-icon-compass:before { content: '\e8ec'; } /* 'î£¬' */
+  .fightclub-icon-attention-1:before { content: '\e8ed'; } /* 'î£­' */
+  .fightclub-icon-attention-circled:before { content: '\e8ee'; } /* 'î£®' */
+  .fightclub-icon-bell-alt:before { content: '\e8ef'; } /* 'î£¯' */
+  .fightclub-icon-bell-1:before { content: '\e8f0'; } /* 'î£°' */
+  .fightclub-icon-eye-off:before { content: '\e8f1'; } /* 'î£±' */
+  .fightclub-icon-key-1:before { content: '\e8f2'; } /* 'î£²' */
+  .fightclub-icon-filter:before { content: '\e8f3'; } /* 'î£³' */
+  .fightclub-icon-beaker-1:before { content: '\e8f4'; } /* 'î£´' */
+  .fightclub-icon-magic:before { content: '\e8f5'; } /* 'î£µ' */
+  .fightclub-icon-euro:before { content: '\e8f6'; } /* 'î£¶' */
+  .fightclub-icon-pound:before { content: '\e8f7'; } /* 'î£·' */
+  .fightclub-icon-dollar:before { content: '\e8f8'; } /* 'î£¸' */
+  .fightclub-icon-rupee:before { content: '\e8f9'; } /* 'î£¹' */
+  .fightclub-icon-yen:before { content: '\e8fa'; } /* 'î£º' */
+  .fightclub-icon-rouble:before { content: '\e8fb'; } /* 'î£»' */
+  .fightclub-icon-try:before { content: '\e8fc'; } /* 'î£¼' */
+  .fightclub-icon-won:before { content: '\e8fd'; } /* 'î£½' */
+  .fightclub-icon-bitcoin:before { content: '\e8fe'; } /* 'î£¾' */
+  .fightclub-icon-link-1:before { content: '\e8ff'; } /* 'î£¿' */
+  .fightclub-icon-hammer:before { content: '\e900'; } /* 'î¤€' */
+  .fightclub-icon-anchor:before { content: '\e901'; } /* 'î¤' */
+  .fightclub-icon-terminal:before { content: '\e902'; } /* 'î¤‚' */
+  .fightclub-icon-eraser:before { content: '\e903'; } /* 'î¤ƒ' */
+  .fightclub-icon-puzzle:before { content: '\e904'; } /* 'î¤„' */
+  .fightclub-icon-shield:before { content: '\e905'; } /* 'î¤…' */
+  .fightclub-icon-language:before { content: '\e906'; } /* 'î¤†' */
+  .fightclub-icon-paw:before { content: '\e907'; } /* 'î¤‡' */
+  .fightclub-icon-cubes:before { content: '\e908'; } /* 'î¤ˆ' */
+  .fightclub-icon-lifebuoy-1:before { content: '\e909'; } /* 'î¤‰' */
+  .fightclub-icon-bomb:before { content: '\e90a'; } /* 'î¤Š' */
+  .fightclub-icon-android:before { content: '\e90b'; } /* 'î¤‹' */
+  .fightclub-icon-apple:before { content: '\e90c'; } /* 'î¤Œ' */
+  .fightclub-icon-codeopen:before { content: '\e90d'; } /* 'î¤' */
+  .fightclub-icon-flag-1:before { content: '\e90e'; } /* 'î¤Ž' */
+  .fightclub-icon-upload-cloud-1:before { content: '\e90f'; } /* 'î¤' */
+  .fightclub-icon-mic:before { content: '\e910'; } /* 'î¤' */
+  .fightclub-icon-cog-2:before { content: '\e911'; } /* 'î¤‘' */
+  .fightclub-icon-phone:before { content: '\e912'; } /* 'î¤’' */
+  .fightclub-icon-box:before { content: '\e913'; } /* 'î¤“' */
+  .fightclub-icon-folder:before { content: '\e914'; } /* 'î¤”' */
+  .fightclub-icon-sound-1:before { content: '\e915'; } /* 'î¤•' */
+  .fightclub-icon-hourglass:before { content: '\e916'; } /* 'î¤–' */
+  .fightclub-icon-light-up:before { content: '\e917'; } /* 'î¤—' */
+  .fightclub-icon-adjust:before { content: '\e918'; } /* 'î¤˜' */
+  .fightclub-icon-network:before { content: '\e919'; } /* 'î¤™' */
+  .fightclub-icon-air:before { content: '\e91a'; } /* 'î¤š' */
+  .fightclub-icon-cloud-sun:before { content: '\e91b'; } /* 'î¤›' */
+  .fightclub-icon-cloud-moon:before { content: '\e91c'; } /* 'î¤œ' */
+  .fightclub-icon-rain:before { content: '\e91d'; } /* 'î¤' */
+  .fightclub-icon-snow-heavy:before { content: '\e91e'; } /* 'î¤ž' */
+  .fightclub-icon-clouds:before { content: '\e91f'; } /* 'î¤Ÿ' */
+  .fightclub-icon-asl:before { content: '\e920'; } /* 'î¤ ' */
+  .fightclub-icon-male:before { content: '\e921'; } /* 'î¤¡' */
+  .fightclub-icon-female:before { content: '\e922'; } /* 'î¤¢' */
+  .fightclub-icon-link-2:before { content: '\e923'; } /* 'î¤£' */
+  .fightclub-icon-pencil-2:before { content: '\e924'; } /* 'î¤¤' */
+  .fightclub-icon-reply:before { content: '\e925'; } /* 'î¤¥' */
+  .fightclub-icon-call:before { content: '\e926'; } /* 'î¤¦' */
+  .fightclub-icon-heart-empty-1:before { content: '\e927'; } /* 'î¤§' */
+  .fightclub-icon-reply-1:before { content: '\e928'; } /* 'î¤¨' */
+  .fightclub-icon-search-3:before { content: '\e929'; } /* 'î¤©' */
+  .fightclub-icon-search-4:before { content: '\e92a'; } /* 'î¤ª' */
+  .fightclub-icon-user-4:before { content: '\e92b'; } /* 'î¤«' */
+  .fightclub-icon-quote-right:before { content: '\e92c'; } /* 'î¤¬' */
+  .fightclub-icon-baseball-equipment4:before { content: '\e92d'; } /* 'î¤­' */
+  .fightclub-icon-award74:before { content: '\e92e'; } /* 'î¤®' */
+  .fightclub-icon-baseball-equipment5:before { content: '\e92f'; } /* 'î¤¯' */
+  .fightclub-icon-baseball7:before { content: '\e930'; } /* 'î¤°' */
+  .fightclub-icon-basketball-equipment8:before { content: '\e931'; } /* 'î¤±' */
+  .fightclub-icon-bicycles4:before { content: '\e932'; } /* 'î¤²' */
+  .fightclub-icon-bows1:before { content: '\e933'; } /* 'î¤³' */
+  .fightclub-icon-boxer4:before { content: '\e934'; } /* 'î¤´' */
+  .fightclub-icon-boxer5:before { content: '\e935'; } /* 'î¤µ' */
+  .fightclub-icon-boxing14:before { content: '\e936'; } /* 'î¤¶' */
+  .fightclub-icon-champion2:before { content: '\e937'; } /* 'î¤·' */
+  .fightclub-icon-chess-game1:before { content: '\e938'; } /* 'î¤¸' */
+  .fightclub-icon-cycle:before { content: '\e939'; } /* 'î¤¹' */
+  .fightclub-icon-dive23:before { content: '\e93a'; } /* 'î¤º' */
+  .fightclub-icon-dive24:before { content: '\e93b'; } /* 'î¤»' */
+  .fightclub-icon-exercise62:before { content: '\e93c'; } /* 'î¤¼' */
+  .fightclub-icon-fence4:before { content: '\e93d'; } /* 'î¤½' */
+  .fightclub-icon-football-game4:before { content: '\e93e'; } /* 'î¤¾' */
+  .fightclub-icon-football-referee1:before { content: '\e93f'; } /* 'î¤¿' */
+  .fightclub-icon-footwear3:before { content: '\e940'; } /* 'î¥€' */
+  .fightclub-icon-footwear5:before { content: '\e941'; } /* 'î¥' */
+  .fightclub-icon-game96:before { content: '\e942'; } /* 'î¥‚' */
+  .fightclub-icon-golfing5:before { content: '\e943'; } /* 'î¥ƒ' */
+  .fightclub-icon-gym39:before { content: '\e944'; } /* 'î¥„' */
+  .fightclub-icon-gymnast62:before { content: '\e945'; } /* 'î¥…' */
+  .fightclub-icon-ice-hockey:before { content: '\e946'; } /* 'î¥†' */
+  .fightclub-icon-ice-hockey1:before { content: '\e947'; } /* 'î¥‡' */
+  .fightclub-icon-ice-hockey2:before { content: '\e948'; } /* 'î¥ˆ' */
+  .fightclub-icon-pool8:before { content: '\e949'; } /* 'î¥‰' */
+  .fightclub-icon-pool9:before { content: '\e94a'; } /* 'î¥Š' */
+  .fightclub-icon-pool10:before { content: '\e94b'; } /* 'î¥‹' */
+  .fightclub-icon-protection16:before { content: '\e94c'; } /* 'î¥Œ' */
+  .fightclub-icon-protection17:before { content: '\e94d'; } /* 'î¥' */
+  .fightclub-icon-protection18:before { content: '\e94e'; } /* 'î¥Ž' */
+  .fightclub-icon-referee3:before { content: '\e94f'; } /* 'î¥' */
+  .fightclub-icon-refresh21:before { content: '\e950'; } /* 'î¥' */
+  .fightclub-icon-rugby-game1:before { content: '\e951'; } /* 'î¥‘' */
+  .fightclub-icon-score2:before { content: '\e952'; } /* 'î¥’' */
+  .fightclub-icon-shirts1:before { content: '\e953'; } /* 'î¥“' */
+  .fightclub-icon-skate21:before { content: '\e954'; } /* 'î¥”' */
+  .fightclub-icon-skiing2:before { content: '\e955'; } /* 'î¥•' */
+  .fightclub-icon-skiing12:before { content: '\e956'; } /* 'î¥–' */
+  .fightclub-icon-sport41:before { content: '\e957'; } /* 'î¥—' */
+  .fightclub-icon-sport42:before { content: '\e958'; } /* 'î¥˜' */
+  .fightclub-icon-sporting:before { content: '\e959'; } /* 'î¥™' */
+  .fightclub-icon-sports-ball19:before { content: '\e95a'; } /* 'î¥š' */
+  .fightclub-icon-sports-ball20:before { content: '\e95b'; } /* 'î¥›' */
+  .fightclub-icon-sports-ball21:before { content: '\e95c'; } /* 'î¥œ' */
+  .fightclub-icon-sports-ball22:before { content: '\e95d'; } /* 'î¥' */
+  .fightclub-icon-sports-ball23:before { content: '\e95e'; } /* 'î¥ž' */
+  .fightclub-icon-targeting10:before { content: '\e95f'; } /* 'î¥Ÿ' */
+  .fightclub-icon-tennis-ball3:before { content: '\e960'; } /* 'î¥ ' */
+  .fightclub-icon-tennis-ball4:before { content: '\e961'; } /* 'î¥¡' */
+  .fightclub-icon-tower8:before { content: '\e962'; } /* 'î¥¢' */
+  .fightclub-icon-transport254:before { content: '\e963'; } /* 'î¥£' */
+  .fightclub-icon-transport257:before { content: '\e964'; } /* 'î¥¤' */
+  .fightclub-icon-transport259:before { content: '\e965'; } /* 'î¥¥' */
+  .fightclub-icon-transport260:before { content: '\e966'; } /* 'î¥¦' */
+  .fightclub-icon-weight30:before { content: '\e967'; } /* 'î¥§' */
+  .fightclub-icon-weights15:before { content: '\e968'; } /* 'î¥¨' */
+  .fightclub-icon-winter-season:before { content: '\e969'; } /* 'î¥©' */
+  .fightclub-icon-avard-1:before { content: '\e96a'; } /* 'î¥ª' */
+  .fightclub-icon-gym40:before { content: '\e96b'; } /* 'î¥«' */
+  .fightclub-icon-muscule:before { content: '\e96c'; } /* 'î¥¬' */
+  .fightclub-icon-t-short:before { content: '\e96d'; } /* 'î¥­' */
+  .fightclub-icon-yoga:before { content: '\e96e'; } /* 'î¥®' */
+  .fightclub-icon-y-shoes:before { content: '\e96f'; } /* 'î¥¯' */
+  .fightclub-icon-style.fightclub-lines-on {
+    position: relative;
+  }
+  .fightclub-icon-style.fightclub-lines-on::before {
+    border-top: 1px solid;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: 110%;
+    top: 50%;
+    width: 63px;
+  }
+  .fightclub-icon-style.fightclub-lines-on::after {
+      border-top: 1px solid;
+      content: "";
+      height: 0;
+      left: 110%;
+      position: absolute;
+      top: 50%;
+      width: 63px;
+      margin-left: 5px;
+  }  
+
+  .about-section .content {
+      font-size: 1.4em;
+      line-height: 40px;
+      font-weight: 300;
+  }
+
+  .blog-section-1 {
+    margin-top: 50px;
+  }
+
+  .overlay2{
+    background: rgba(0,0,0,0.6);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 2em;
+}
+.blog-section-1 .block-1 {background-image: url('/img/3291.jpg')}
+.blog-section-1 .block-2 {background-color: #161515}
+.blog-section-1 .block-3 {background-image: url('/img/3291.jpg')}
+
+  .blog-section-1 .block-1,
+  .blog-section-1 .block-2,
+  .blog-section-1 .block-3 {
+    margin-bottom: 50px;
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .blog-section-1 h2 {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 0.6em;
+  }
+  .blog-section-1 p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #838e87;
+    margin-top: 1em;
+  }
+
+  .blog-section-2 .row {
+    padding: 20px 15px;
+}
+
+.blog-section-2 span {
+    color: #a7e4c2;
+}
+
+.blog-section-2 p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #838e87;
+}
+
+.blog-section-2 a {
+    top: 30px;
+}
+
+.blog-section-2 .col-md-6 {
+    min-height: 600px;
+    padding-top: 96px;
+    padding-bottom: 70px;
+}
+
+.blog-section-2 .content {
+    text-align: center;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.blog-section-2 div[class*="image"] {
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+.blog-section-2 .image-1 { background-image: url('/img/shutterstock_472079953.jpg'); }
+.blog-section-2 .image-2 { background-image: url('/img/shutterstock_596083874.jpg'); }
