@@ -32,7 +32,7 @@
                     <div class="slide-content container">
                         <h2>How To</h2>
                         <h1>Lose Weight Through Fitness</h1>
-                        <a class="button text-uppercase" href="#">Read More</a>
+                        <a class="button text-uppercase" href="./post/how-to-lose-weight-through-fitness">Read More</a>
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@
                     <div class="slide-content container">
                         <h2>Join Us now</h2>
                         <h1>Help you make the right and healthy choices</h1>
-                        <a class="button text-uppercase" href="#">Read More</a>
+                        <a class="button text-uppercase" href="./about-us">Read More</a>
                     </div>
                 </div>
             </div>

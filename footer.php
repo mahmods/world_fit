@@ -30,10 +30,10 @@
                     <div class="col-12 col-md-4">
                         <h1>RECENT POSTS</h1>
                         <nav>
-                            <a href="#">How To Lose Weight Through Fitness</a>
-                            <a href="#">Workout Routine for Effective Weight Loss</a>
-                            <a href="#">How To Build Your Muscles</a>
-                            <a href="#">How to Achieve Results in Muscles Building</a>
+                            <a href="./post/how-to-lose-weight-through-fitness">How To Lose Weight Through Fitness</a>
+                            <a href="./post/workout-routine-for-effective-weight-loss">Workout Routine for Effective Weight Loss</a>
+                            <a href="./how-to-build-your-muscles">How To Build Your Muscles</a>
+                            <a href="./how-to-achieve-results-inmuscles-building">How to Achieve Results in Muscles Building</a>
                         </nav>
                     </div>
                 </div>

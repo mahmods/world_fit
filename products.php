@@ -16,50 +16,50 @@
         <div class="row">
             <div class="col-12 col-md-4 wow fadeInUp">
                 <div class="post">
-                    <a href="#">
+                    <a href="./product/protein-powder">
                         <div class="post-image"><img class="img-fluid" src="./img/382.jpg" alt=""></div>
                     </a>
-                    <h2>How To Lose Weight Through Fitness</h2>
+                    <h2>Protein Powder</h2>
                     <p>
-                    If you are determined to lose weight through exercising, you have to put in time and commitment. Exercise works better with a complementary nutrition...
+                    The unrivalled taste and technology used for the production of Protein Powder Ready-To-Drink protein shakes and bars is now a Total Protein System making the most...
                     </p>
-                    <a class="button text-uppercase" href="#">Read More</a>
+                    <a class="button text-uppercase" href="./product/protein-powder">Read More</a>
                 </div>
             </div>
             <div class="col-12 col-md-4 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="post">
-                    <a href="#">
+                    <a href="./product/isolate-powder">
                         <div class="post-image"><img class="img-fluid" src="./img/382.jpg" alt=""></div>
                     </a>
-                    <h2>Workout Routine for Effective Weight Loss</h2>
+                    <h2>Isolate Powder</h2>
                     <p>
-                    The start of a fitness routine is very frustrating. There are many factors behind this. Also one needs to be sure if the time spent for workouts will be beneficial in the long run...
+                    Made from purposeful ingredients and defined protein sources, every serving of Isolate Powder has been formulated for result-oriented fitness goals...
                     </p>
-                    <a class="button text-uppercase" href="#">Read More</a>
+                    <a class="button text-uppercase" href="./product/isolate-powder">Read More</a>
                 </div>
             </div>
             <div class="col-12 col-md-4 wow fadeInUp" data-wow-delay="0.6s">
                 <div class="post">
-                    <a href="#">
+                    <a href="./product/whey-protein-powder">
                         <div class="post-image"><img class="img-fluid" src="./img/382.jpg" alt=""></div>
                     </a>
-                    <h2>How To Build Your Muscles</h2>
+                    <h2>Whey Protein Powder</h2>
                     <p>
-                    There are some universal rules to muscle gain, which can be implemented into personal training regime so as to get strong muscle building results. During the work out journey, there will be...
+                    Whey Protein Powder has been made using potent and quality ingredients from defined protein sources that have been formulated into every serving...
                     </p>
-                    <a class="button text-uppercase" href="#">Read More</a>
+                    <a class="button text-uppercase" href="./product/whey-protein-powder">Read More</a>
                 </div>
             </div>
             <div class="col-12 col-md-4 wow fadeInUp">
                 <div class="post">
-                    <a href="#">
+                    <a href="./product/weight-loss-shake">
                         <div class="post-image"><img class="img-fluid" src="./img/382.jpg" alt=""></div>
                     </a>
-                    <h2>How to Achieve Results in Muscles Building</h2>
+                    <h2>Weight Loss Shake</h2>
                     <p>
-                    Some people spend years trying to get more muscular, but just can’t seem to make it happen. Whether you want to bulk up, enhance your chest, or achieve any other muscle building goal, here are great tips to build muscle fast...
+                    Dairy Free & Gluten Free Chocolate Shakes do not contain sweeteners, flavours or artificial colours. They are also lactose free and gluten free...
                     </p>
-                    <a class="button text-uppercase" href="#">Read More</a>
+                    <a class="button text-uppercase" href="./product/weight-loss-shake">Read More</a>
                 </div>
             </div>
         </div>
